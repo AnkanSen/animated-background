@@ -20,7 +20,7 @@ window.addEventListener("mousemove", function (e) {
   console.log(canvas.width,canvas.height);
 
 ctx.fillStyle = "white";
-ctx.font = window.innerWidth/100 + "px Arial";
+ctx.font = (canvas.width*0.0001) + "px Arial";
 ctx.fillText("Ankan", 0, 25);
 const textcoordinates = ctx.getImageData(0, 0, 100, 100);
 
